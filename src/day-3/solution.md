@@ -48,5 +48,5 @@ for i = 1:length(allMatches)
 end
 ```
 
-As an example of how this works, consider the sequence `do()` `mul(2,3)` `don't()` `mul(4,5)`. The first multiplication (2*3=6) would be included in both sums since it occurs while multiplication is enabled. However, the second multiplication (4*5=20) would only be included in `totalSumAll` since it occurs after `the don't()` instruction. At the end, `totalSumAll` would be 26 while `totalSumEnabled` would be 6. 
+As an example of how this works, consider the sequence `do()` `mul(2,3)` `don't()` `mul(4,5)`. The first multiplication (2\*3=6) would be included in both sums since it occurs while multiplication is enabled. However, the second multiplication (4*5=20) would only be included in `totalSumAll` since it occurs after `the don't()` instruction. At the end, `totalSumAll` would be 26 while `totalSumEnabled` would be 6. 
 Finally, we output both our sums.
